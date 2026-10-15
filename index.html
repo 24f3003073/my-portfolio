@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <style>
+    :root { color-scheme: light dark; --accent: #4f46e5; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, sans-serif; line-height: 1.6; }
+    header { padding: 4rem 1.25rem 3rem; text-align: center; background: linear-gradient(135deg, #4f46e5, #0891b2); color: white; }
+    header h1 { margin: 0 0 .5rem; font-size: clamp(2rem, 6vw, 3.5rem); }
+    header p { margin: .25rem 0; }
+    main { max-width: 900px; padding: 2rem 1.25rem; margin: auto; }
+    section { margin: 2rem 0; }
+    .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+    article { border: 1px solid #8885; border-radius: 14px; padding: 1.25rem; }
+    a { color: var(--accent); }
+    .contact { padding: 1.25rem; border-radius: 14px; background: #8881; }
+    footer { text-align: center; padding: 2rem 1rem; opacity: .8; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Portfolio</h1>
+    <p>Student · Developer · Lifelong Learner</p>
+    <p>Welcome to my portfolio of projects and learning.</p>
+  </header>
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <p>I enjoy solving problems, learning new technologies, and building practical projects. This portfolio highlights my work and skills.</p>
+    </section>
+    <section>
+      <h2>Projects</h2>
+      <div class="projects">
+        <article>
+          <h3>Sales Data Analysis</h3>
+          <p>Analyzed transaction data to calculate revenue by location and time period.</p>
+        </article>
+        <article>
+          <h3>Configuration API</h3>
+          <p>Built a FastAPI example demonstrating configuration precedence, type coercion, and secret masking.</p>
+        </article>
+        <article>
+          <h3>File Organization Script</h3>
+          <p>Used shell commands to categorize, rename, and verify files in a nested archive.</p>
+        </article>
+      </div>
+    </section>
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email: <!--email_off-->24f3003073@ds.study.iitm.ac.in<!--/email_off--></p>
+    </section>
+  </main>
+  <footer>© 2026 My Portfolio</footer>
+</body>
+</html>
